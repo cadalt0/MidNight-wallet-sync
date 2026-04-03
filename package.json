@@ -1,9 +1,20 @@
 {
   "name": "midnight-walletsync",
-  "private": true,
+  "version": "0.1.0",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "midnightwalletsync.config.json",
+    ".env.example",
+    "tsconfig.json"
+  ],
   "bin": {
-    "midnightsync": "./bin/midnightsync.js"
+    "midnightsync": "bin/midnightsync.js"
   },
   "scripts": {
     "init": "NODE_OPTIONS=--no-deprecation tsx src/cli.ts init",
