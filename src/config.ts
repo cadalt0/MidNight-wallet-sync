@@ -10,7 +10,7 @@ export function defaultConfig(): MidnightWalletSyncConfig {
   return {
     network: 'preprod',
     seedBaseName: 'wallet_id',
-    walletCount: 3,
+    walletCount: 1,
     stateDir: '.midnightwalletsync',
     port: 8787,
     nightDecimals: 6,
