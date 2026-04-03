@@ -1,0 +1,14 @@
+{
+  "network": "preprod",
+  "seedBaseName": "wallet_id",
+  "walletCount": 1,
+  "stateDir": ".midnightwalletsync",
+  "port": 8787,
+  "nightDecimals": 6,
+  "dustDecimals": 15,
+  "indexer": "https://indexer.preprod.midnight.network/api/v4/graphql",
+  "indexerWS": "wss://indexer.preprod.midnight.network/api/v4/graphql/ws",
+  "node": "https://rpc.preprod.midnight.network",
+  "nodeWS": "wss://rpc.preprod.midnight.network",
+  "proofServer": "https://proof.preprod.midnight.network"
+}

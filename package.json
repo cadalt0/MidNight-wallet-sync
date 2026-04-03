@@ -1,0 +1,15 @@
+{
+  "name": "midnight-walletsync",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "midnightsync": "./bin/midnightsync.js"
+  },
+  "scripts": {
+    "init": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts init",
+    "sync": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts sync",
+    "balance": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts balance",
+    "status": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts status",
+    "typecheck": "../node_modules/.bin/tsc --noEmit"
+  }
+}
