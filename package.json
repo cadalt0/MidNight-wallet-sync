@@ -6,11 +6,22 @@
     "midnightsync": "./bin/midnightsync.js"
   },
   "scripts": {
-    "init": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts init",
-    "sync": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts sync",
-    "balance": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts balance",
-    "status": "NODE_OPTIONS=--no-deprecation ../node_modules/.bin/tsx src/cli.ts status",
+    "init": "NODE_OPTIONS=--no-deprecation tsx src/cli.ts init",
+    "sync": "NODE_OPTIONS=--no-deprecation tsx src/cli.ts sync",
+    "balance": "NODE_OPTIONS=--no-deprecation tsx src/cli.ts balance",
+    "status": "NODE_OPTIONS=--no-deprecation tsx src/cli.ts status",
     "build": "npm run typecheck",
-    "typecheck": "../node_modules/.bin/tsc --noEmit"
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@midnight-ntwrk/ledger-v8": "latest",
+    "@midnight-ntwrk/testkit-js": "latest",
+    "@midnight-ntwrk/wallet-sdk-address-format": "latest",
+    "@midnight-ntwrk/wallet-sdk-facade": "latest",
+    "tsx": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest"
   }
 }
